@@ -1,0 +1,24 @@
+https://drive.google.com/file/d/0B3FfjkkTy_4ealFlTjdFWGVub28/edit?usp=sharing
+
+https://googledrive.com/host/0B3FfjkkTy_4ealFlTjdFWGVub28
+
+
+var script=document.createElement('script');
+script.type='text/javascript';
+script.src='https://googledrive.com/host/0B3FfjkkTy_4ealFlTjdFWGVub28';
+document.head.appendChild(script);
+
+
+document.getElementById("PLACE1").onclick();
+<script type="text/javascript" src="https://googledrive.com/host/0B3FfjkkTy_4ealFlTjdFWGVub28"></script>
+
+
+document.head.appendChild(<script type="text/javascript" src="https://googledrive.com/host/0B3FfjkkTy_4ealFlTjdFWGVub28"></script>);
+
+
+//final
+document.getElementById("PLACE1").onclick();
+var script=document.createElement('script');
+script.type='text/javascript';
+script.src='https://googledrive.com/host/0B3FfjkkTy_4ealFlTjdFWGVub28';
+document.head.appendChild(script);

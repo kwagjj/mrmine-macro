@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript">
+function func1(){
+	alert('hello');
+}
+
+var popup;
+
+function init(){
+	window.open("child.html","just title","width=300,height=300");
+}
+</script>
+</head>
+<body>
+
+<input type="button" onclick="init();" value="send"/>
+<input type="button" onclick="func1();" value="test func1"/>
+</body>
+</html>

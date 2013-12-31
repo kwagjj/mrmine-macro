@@ -1,0 +1,14 @@
+initialize pop-up
+/////////////////////
+
+https://drive.google.com/file/d/0B3FfjkkTy_4ecTJEZDBpLUdwRjg/edit?usp=sharing
+
+https://googledrive.com/host/0B3FfjkkTy_4ecTJEZDBpLUdwRjg
+
+///////
+
+
+var script=document.createElement('script');
+script.type='text/javascript';
+script.src='https://googledrive.com/host/0B3FfjkkTy_4ecTJEZDBpLUdwRjg';
+document.head.appendChild(script);

@@ -1,0 +1,26 @@
+
+
+if(animwhat[1]==1)
+console.log('hello');
+
+
+
+document.getElementById("tabsell1").style.display
+
+for(var b in document.getElementById("tabsell1").style) { 
+   console.log(b); 
+}
+
+
+//
+
+print("Type some text and press <ENTER>:\t");
+var userInput = readline();
+print("User input: " + userInput);
+
+console.log('type something:');
+var input=readline();
+console.log(input);
+
+var a=10;
+console.log(a);
