@@ -33,18 +33,17 @@
 	function apply(){
 		for(i=0;i<sellarray.length;i++){
 			var check=document.getElementById("CB"+i).checked;
-			/*
-			if(check="checked"){
+			
+			if(check=true){
 				sellarray[i]=1;
 			}
 			else{
 				sellarray[i]=0;
 				
 			}
-			*/
-			document.getElementById("result").value+=","+check;
+			
+			document.getElementById("result").value+=","+sellarray[i];
 		}
-		
 		
 	}
 	
