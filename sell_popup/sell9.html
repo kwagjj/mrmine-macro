@@ -36,7 +36,8 @@
 	function apply(){
 		for(i=0;i<sellarray.length;i++){
 			token=document.getElementById("CB"+i).checked;
-			if(token=true){
+			
+			if(token==true){
 				outarray[i]=1;
 			}
 			else{
@@ -52,6 +53,10 @@
 			token=document.getElementById("CB"+i).checked;
 			document.getElementById("result").value+=token;
 		}
+	}
+	
+	function erase(){
+		document.getElementById("result").value="";
 	}
 
 </script>
@@ -104,6 +109,7 @@
     <input type="button" value="apply2" onclick="apply2();"/>
     <br>
     <input type="textbox" id="result">
+    <input type="button" value="erase" id="erase_result"/ onclick="erase();"/>
 
 </body>
 </html>
