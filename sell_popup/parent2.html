@@ -1,0 +1,40 @@
+<html>
+<head>
+<script type="text/javascript">
+	var apple=[1,2,3];
+	var receive=new Array();
+	var receive_TB=document.getElementById("receive_result");
+
+	function start(){
+		var url=document.getElementById("URLTB").value+".html";
+		var w=window.open(url,"sell_window","width=300,height=410");
+	}
+	
+	function erase(){
+		receive_TB.value="";
+	}
+	
+	function show_receive(){
+		for(i=0;i<receive.length;i++){
+			receive_TB.value+=receive[i]+" ";
+		}
+	}
+	
+</script>
+</head>
+
+<body>
+
+type without '.html' <br>
+<input type="textbox" id="URLTB">
+<input type="button" onclick="start();" value="open child"/>
+
+<br>
+<input type="textbox" id="receive_result">
+<input button="button" value="show receive" onclick="show_receive();"/>
+<input button="button" value="erase" onclick="erase();"/>
+
+	
+	
+</body>
+</html>
