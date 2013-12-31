@@ -46,6 +46,12 @@
 			document.getElementById("result").value+=outarray[i]+" ";
 		}	
 	}
+	
+	function apply2(){
+		for(i=0;i<sellarray.length;i++){
+			token=document.getElementById("CB"+i).checked;
+			document.getElementById("result").value+=token;
+	}
 
 </script>
 
@@ -93,7 +99,7 @@
     
     <br>
     
-    <input type="button" value="apply" onclick="apply();"/>
+    <input type="button" value="apply" onclick="apply2();"/>
     <br>
     <input type="textbox" id="result">
 
