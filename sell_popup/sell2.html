@@ -14,8 +14,9 @@
 <script type="text/javascript">
 	var sellarray;
 	
-	window.onload=function(){
-		alert('loading');
+	window.onload=
+	function dataload(){
+		
 		sellarray=window.opener.apple;
 		
 		for(i=0;i<sellarray.length;i++){
@@ -25,11 +26,13 @@
 	
 	
 	
-	
 </script>
 
 </head>
   <body>
+  
+  <input type="button" value="load data" onclick="dataload();"/>
+  <br>
     <table border=1>
       <tr>
         <td width="30" align="center">0</td>
