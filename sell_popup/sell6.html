@@ -14,6 +14,7 @@
 <script type="text/javascript">
 	var sellarray;
 	
+	
 	window.onload=function(){
 		
 		sellarray=window.opener.apple;
@@ -29,6 +30,23 @@
 	}
 	
 	
+	function apply(){
+		for(i=0;i<sellarray.length;i++){
+			var check=document.getElementById("CB"+i).checked;
+			
+			if(check="checked"){
+				sellarray[i]=1;
+			}
+			else{
+				sellarray[i]=0;
+				
+			}
+			
+			document.getElementById("result").value+=","+sellarray[i];
+		}
+		
+		
+	}
 	
 </script>
 
@@ -37,6 +55,13 @@
   
   
     <table border=1>
+    <tr>
+        <td width="30" align="center">index</td>
+        <td width="100" align="center">ore name</td>
+        <td>sell</td>
+    </tr>
+      
+    
       <tr>
         <td width="30" align="center">0</td>
         <td width="100" align="center">coal</td>
@@ -62,6 +87,12 @@
       </tr>
       
     </table>
+    
+    <br>
+    
+    <input type="button" value="apply" onclick="apply();"/>
+    <br>
+    <input type="textbox" id="result">
 
 </body>
 </html>
