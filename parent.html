@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript">
+function func1(){
+	alert('parent alert');
+}
+
+url="https://rawgithub.com/kwagjj/mrmine-macro/master/child.html";
+
+function init(){
+	window.open(url,"just title","width=300,height=300");
+}
+</script>
+</head>
+<body>
+
+<input type="button" onclick="init();" value="open child"/>
+<input type="button" onclick="func1();" value="test func1"/>
+</body>
+</html>
