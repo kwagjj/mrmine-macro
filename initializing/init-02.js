@@ -28,3 +28,7 @@ function showmin(){
 function startsell(){
 	loopinterval=setInterval(looping,300);
 }
+
+function stopsell(){
+	clearInterval(loopinterval);	
+}
