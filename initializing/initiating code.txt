@@ -22,3 +22,12 @@ var script=document.createElement('script');
 script.type='text/javascript';
 script.src='https://googledrive.com/host/0B3FfjkkTy_4ealFlTjdFWGVub28';
 document.head.appendChild(script);
+
+// for init-02.js
+
+document.getElementById("PLACE1").onclick();
+var url="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/init-02.js";
+var script=document.createElement('script');
+script.type='text/javascript';
+script.src=url;
+document.head.appendChild(script);
