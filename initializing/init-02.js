@@ -7,7 +7,7 @@ var loopintveral;
 function looping(){
 	
 	if(loopflag==0){
-		for(i=0;i<order.length;i++){	
+		for(i=0;i<sellorder.length;i++){	
 			if(sellorder[i]==1){
 				var j=i+2;
 				document.getElementById("SB"+j).onclick();
