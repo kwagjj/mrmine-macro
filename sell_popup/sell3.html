@@ -22,14 +22,15 @@
 		
 		for(i=0;i<sellarray.length;i++){
 			
-			var token=sellarray[i];
 			
-			document.getElementById("load_sellorder").value+=sellarray[i]+" ";
 			
+			document.getElementById("tb1").value+=sellarray[i]+" ";
+			/*
 			if(token==1){
 				document.getElementById("token_pass").value+="("+sellarray[i]+","+token+") ";
 				document.getElementById("CB"+i).checked=true;
 			}
+			*/
 		}
 	}
 	
@@ -67,9 +68,8 @@
   <body>
   
   
-  load apple array values: <input type="textbox" id="load_apple">
+  load sellorder values: <input type="textbox" id="tb1">
   <br>
-  token loop pass: <input type="textbox" id="token_pass">
   
     <table border=1>
     <tr>
