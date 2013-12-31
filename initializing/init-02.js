@@ -18,7 +18,7 @@ function looping(){
 
 function showmin(){
 	var url="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/mineral_info.html";
-	var w=window.open(url,"mineral_info","width=300,height=500");
+	var w=window.open(url,"mineral_info","width=300,height=300");
 }
 
 
