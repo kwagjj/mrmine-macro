@@ -31,7 +31,7 @@
 	
 	function apply(){
       
-        document.getElementById("result").value="";
+        
 		for(i=0;i<sellarray.length;i++){
 			token=document.getElementById("CB"+i).checked;
 			
@@ -42,7 +42,7 @@
 				outarray[i]=0;
 			}
 			
-			document.getElementById("result").value+=outarray[i]+" ";
+			
 		}
 		
       window.opener.arr1=outarray; //transmit back array
