@@ -20,10 +20,7 @@
 		sellarray=window.opener.sellorder;
 		
 		for(i=0;i<sellarray.length;i++){
-			
-			
-			
-			document.getElementById("tb1").value+=sellarray[i]+" ";
+
 			
 			if(sellarray[i]==1){
 				document.getElementById("CB"+i).checked=true;
@@ -33,6 +30,8 @@
 	}
 	
 	function apply(){
+      
+        document.getElementById("result").value="";
 		for(i=0;i<sellarray.length;i++){
 			token=document.getElementById("CB"+i).checked;
 			
@@ -46,19 +45,12 @@
 			document.getElementById("result").value+=outarray[i]+" ";
 		}
 		
-		window.opener.arr1=outarray;
+      window.opener.arr1=outarray; //transmit back array
 	}
 	
-	function apply2(){
-		for(i=0;i<sellarray.length;i++){
-			token=document.getElementById("CB"+i).checked;
-			document.getElementById("result").value+=token;
-		}
-	}
 	
-	function erase(){
-		document.getElementById("result").value="";
-	}
+	
+	
 
 </script>
 
@@ -66,10 +58,17 @@
   <body>
   
   
-  load sellorder values: <input type="textbox" id="tb1">
-  <br>
   
     <table border=1>
+      
+      <tr>
+        <td align="center">index</td>
+        <td align="center">ore name</td>
+        <td>sell</td>
+      </tr>
+      
+      
+      
     <tr>
 <td width="30" align="center">0</td>
 <td width="100" align="center">coal</td>
@@ -158,13 +157,11 @@
       
     </table>
     
-    <br>
+<br>
     
-    <input type="button" value="apply" onclick="apply();"/>
-    <input type="button" value="apply2" onclick="apply2();"/>
-    <br>
-    <input type="textbox" id="result">
-    <input type="button" value="erase" id="erase_result"/ onclick="erase();"/>
+    <input type="button" value="apply" onclick="apply();" style="width:100pt;height:50px;"/>
+
+    
 
 </body>
 </html>
