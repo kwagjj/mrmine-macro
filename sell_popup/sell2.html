@@ -1,0 +1,172 @@
+<html>
+<!--
+  Created using jsbin.com
+  Source can be edited via http://jsbin.com/IpOmUtAX/2/edit
+-->
+  <head>
+<meta name="description" content="a list of sellorder array index for ore" />
+    
+    
+  
+<style id="jsbin-css">
+
+</style>
+<script type="text/javascript">
+	var sellarray;
+	
+	var outarray=new Array();
+	
+	window.onload=function(){
+		
+		sellarray=window.opener.sellorder;
+		
+		for(i=0;i<sellarray.length;i++){
+			
+			var token=sellarray[i];
+			
+			document.getElementById("load_sellorder").value+=sellarray[i]+" ";
+			
+			if(token==1){
+				document.getElementById("token_pass").value+="("+sellarray[i]+","+token+") ";
+				document.getElementById("CB"+i).checked=true;
+			}
+		}
+	}
+	
+	function apply(){
+		for(i=0;i<sellarray.length;i++){
+			token=document.getElementById("CB"+i).checked;
+			
+			if(token==true){
+				outarray[i]=1;
+			}
+			else{
+				outarray[i]=0;
+			}
+			
+			document.getElementById("result").value+=outarray[i]+" ";
+		}
+		
+		window.opener.arr1=outarray;
+	}
+	
+	function apply2(){
+		for(i=0;i<sellarray.length;i++){
+			token=document.getElementById("CB"+i).checked;
+			document.getElementById("result").value+=token;
+		}
+	}
+	
+	function erase(){
+		document.getElementById("result").value="";
+	}
+
+</script>
+
+</head>
+  <body>
+  
+  
+  load apple array values: <input type="textbox" id="load_apple">
+  <br>
+  token loop pass: <input type="textbox" id="token_pass">
+  
+    <table border=1>
+    <tr>
+<td width="30" align="center">0</td>
+<td width="100" align="center">coal</td>
+<td><input type="checkbox" id="CB0"/>
+</td>
+</tr>
+
+<tr>
+<td width="30" align="center">1</td>
+<td width="100" align="center">copper</td>
+<td><input type="checkbox" id="CB1"/>
+</td>
+</tr>
+
+<tr>
+<td width="30" align="center">2</td>
+<td width="100" align="center">silver</td>
+<td><input type="checkbox" id="CB2"/>
+</td>
+</tr>
+
+<tr>
+<td width="30" align="center">3</td>
+<td width="100" align="center">gold</td>
+<td><input type="checkbox" id="CB3"/>
+</td>
+</tr>
+
+<tr>
+<td width="30" align="center">4</td>
+<td width="100" align="center">platinum</td>
+<td><input type="checkbox" id="CB4"/>
+</td>
+</tr>
+
+<tr>
+<td width="30" align="center">5</td>
+<td width="100" align="center">diamond</td>
+<td><input type="checkbox" id="CB5"/>
+</td>
+</tr>
+
+<tr>
+<td width="30" align="center">6</td>
+<td width="100" align="center">coltan</td>
+<td><input type="checkbox" id="CB6"/>
+</td>
+</tr>
+
+<tr>
+<td width="30" align="center">7</td>
+<td width="100" align="center">painite</td>
+<td><input type="checkbox" id="CB7"/>
+</td>
+</tr>
+
+<tr>
+<td width="30" align="center">8</td>
+<td width="100" align="center">black opal</td>
+<td><input type="checkbox" id="CB8"/>
+</td>
+</tr>
+
+<tr>
+<td width="30" align="center">9</td>
+<td width="100" align="center">red diamond</td>
+<td><input type="checkbox" id="CB9"/>
+</td>
+</tr>
+
+<tr>
+<td width="30" align="center">10</td>
+<td width="100" align="center">obsidian</td>
+<td><input type="checkbox" id="CB10"/>
+</td>
+</tr>
+
+<tr>
+<td width="30" align="center">11</td>
+<td width="100" align="center">californium</td>
+<td><input type="checkbox" id="CB11"/>
+</td>
+</tr>
+
+
+      
+    </table>
+    
+    <br>
+    
+    <input type="button" value="apply" onclick="apply();"/>
+    <input type="button" value="apply2" onclick="apply2();"/>
+    <br>
+    <input type="textbox" id="result">
+    <input type="button" value="erase" id="erase_result"/ onclick="erase();"/>
+
+</body>
+</html>
