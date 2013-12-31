@@ -1,0 +1,40 @@
+<html>
+<head>
+<script type="text/javascript">
+	var apple=[1,2,3];
+	var arr1=[3,3,3];
+  
+	
+
+	function start(){
+		var url=document.getElementById("URLTB").value+".html";
+		var w=window.open(url,"sell_window","width=300,height=410");
+	}
+	
+  function show1(){
+    document.getElementById("tb1").value="";
+    for(i=0;i<arr1.length;i++){
+      document.getElementById("tb1").value+=arr1[i]+" ";
+    }
+  }
+  
+  
+	
+</script>
+</head>
+
+<body>
+
+type without '.html' <br>
+<input type="textbox" id="URLTB">
+<input type="button" onclick="start();" value="open child"/>
+
+<br>
+<br>
+  show arr1: 
+  <input type="textbox" id="tb1">
+  <input type="button" value="show" onclick="show1();"/>
+ 
+	
+</body>
+</html>
