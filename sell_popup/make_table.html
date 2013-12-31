@@ -1,0 +1,64 @@
+<html>
+<!--
+  Created using jsbin.com
+  Source can be edited via http://jsbin.com/UXEQuxi/1/edit
+-->
+  <head>
+    
+    
+    <script type="text/javascript">
+      
+      var i=0
+      var name="coal";
+      var namearr=['coal','copper','silver','gold','platinum','diamond','coltan','painite','black opal','red diamond','obsidian','californium'];
+    
+      
+      var line1="<tr>\n<td width=\"30\" align=\"center\">";
+      // insert index
+      var line2="</td>\n<td width=\"100\" align=\"center\">";
+      // insert ore name
+      var line3="</td>\n<td><input type=\"checkbox\" id=\"CB"
+      //insert index for CB number
+      var line4="\"/>\n</td>\n</tr>\n\n";
+      
+      
+      
+      var total=line1+i+line2+name+line3+i+line4;
+          
+      function func1(){
+        document.getElementById("ta").value=total;
+      }
+      
+      function loop(){
+        
+        for(i=0;i<namearr.length;i++){
+        
+          total=line1+i+line2+namearr[i]+line3+i+line4;
+          
+          document.getElementById("ta").value+=total;
+          
+        }
+        
+      }
+      
+    </script>
+    
+  
+<style id="jsbin-css">
+
+</style>
+</head>
+  <body>
+    
+    
+    <textarea rows="20" cols="70" id="ta">
+</textarea>
+    
+    <input type="button" value="exe" onclick="loop();"/>
+
+    
+  <script>
+
+</script>
+</body>
+</html>
