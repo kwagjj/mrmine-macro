@@ -22,4 +22,4 @@ function showmin(){
 }
 
 
-var interval=setInterval(looping,300);
+
