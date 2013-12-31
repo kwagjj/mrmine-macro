@@ -7,7 +7,7 @@ var loopintveral;
 function looping(){
 	
 	if(loopflag==0){
-		for(i=0;i<order.length;i++){	
+		for(i=0;i<sellorder.length;i++){	
 			if(sellorder[i]==1){
 				var j=i+2;
 				document.getElementById("SB"+j).onclick();
@@ -27,4 +27,13 @@ function showmin(){
 
 function startsell(){
 	loopinterval=setInterval(looping,300);
+}
+
+function stopsell(){
+	clearInterval(loopinterval);	
+}
+
+function sell(){
+	var url="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/sell_window_ver1.0.html"
+	var w=window.open(url,"sell_window","width=300,height=450");
 }

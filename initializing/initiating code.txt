@@ -31,3 +31,12 @@ var script=document.createElement('script');
 script.type='text/javascript';
 script.src=url;
 document.head.appendChild(script);
+
+
+// for init-03.js
+
+var url="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/init-03.js";
+var script=document.createElement('script');
+script.type='text/javascript';
+script.src=url;
+document.head.appendChild(script);
