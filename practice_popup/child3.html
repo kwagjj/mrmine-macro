@@ -15,6 +15,11 @@ function callparent_variable(){
   document.getElementById("TB").value=window.opener.newvariable;
 }
 
+function call_local_variable(){
+ var localvar=123;
+ document.getElementById("TB").value=localvar;
+}
+
 </script>
 
 </head>
@@ -29,6 +34,8 @@ function callparent_variable(){
 
 <input type="button" value="check display" onclick="check_display();"/>
 <input type="button" value="check parent comm" onclick="callparent_variable();"/>
+<input type="button" value="check with local var" onclick="call_local_variable();"/>
+<br>
 <input type="textbox" value="initial value" id="TB">
 
 
