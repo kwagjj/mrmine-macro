@@ -4,13 +4,14 @@
 	var apple=[1,2,3];
 
 	function start(){
-		var url="sell2.html";
+		var url=document.getElementById("URLTB")+".html";
 		var w=window.open(url,"sell_window","width=300,height=410");
 	}
 </script>
 </head>
 <body>
-parent html
+type without '.html' <br>
+<input type="textbox" id="URLTB">
 <input type="button" onclick="start();" value="open child"/>
 </body>
 </html>
