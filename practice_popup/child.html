@@ -8,7 +8,7 @@ function method2(){
 }
 
 function check_display(){
-  display("display function working well");
+  document.getElementById("TB").value="check_display activated";
 }
 
 function callparent_variable(){
@@ -29,6 +29,7 @@ function callparent_variable(){
 
 <input type="button" value="check display" onclick="check_display();"/>
 <input type="button" value="check parent comm" onclick="callparent_variable();"/>
+<input type="textbox" value="initial value" id="TB">
 
 
 
