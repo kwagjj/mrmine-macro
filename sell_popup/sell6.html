@@ -14,6 +14,7 @@
 <script type="text/javascript">
 	var sellarray;
 	
+	var outarray;
 	
 	window.onload=function(){
 		
@@ -30,6 +31,20 @@
 				document.getElementById("CB"+i).checked=true;
 			}
 		}
+	}
+	
+	function apply(){
+		for(i=0;i<sellarray.length;i++){
+			token=document.getElementById("CB"+i).checked;
+			if(token=true){
+				outarray[i]=1;
+			}
+			else{
+				outarray[i]=0;
+			}
+			
+			document.getElementById("result").value+=outarray[i]+" ";
+		}	
 	}
 
 </script>
