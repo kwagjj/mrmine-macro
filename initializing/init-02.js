@@ -1,15 +1,15 @@
-var sflag=0;
+var loopflag=0;
 
-var sellarray=[1,1,1,1,1,0,0,0,0,0,0,0];  // list of ones to sell. order as written in table.
+var sellorder=[1,1,1,1,1,0,0,0,0,0,0,0];  // list of ones to sell. order as written in table.
 
-function slooping()
+function looping()
 {
 	
-	if(sflag==0)
+	if(loopflag==0)
 	{
-		for(i=0;i<sellarray.length;i++)
+		for(i=0;i<order.length;i++)
 		{	
-			if(sellarray[i]==1){
+			if(sellorder[i]==1){
 				var j=i+2;
 				
 			
@@ -22,5 +22,10 @@ function slooping()
 	}
 }
 
+function showmin(){
+	var url=mineral_info.html;
+	var w=window.open(url,"mineral_info","width=300,height=500");
+}
 
-var interval=setInterval(slooping,300);
+
+var interval=setInterval(looping,300);
