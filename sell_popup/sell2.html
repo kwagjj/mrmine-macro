@@ -45,7 +45,9 @@
 			}
 			
 			document.getElementById("result").value+=outarray[i]+" ";
-		}	
+		}
+		
+		window.opener.receive=outarray;
 	}
 	
 	function apply2(){
