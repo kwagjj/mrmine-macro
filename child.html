@@ -3,13 +3,16 @@
 <head>
 <script type="text/javascript">
 
-
+function method2(){
+ window.opener.func1(); 
+}
 </script>
 
 </head>
 <body>
 
-<input type="button" value="button" onclick="window.opener.func1();"/>
+<input type="button" value="direct call" onclick="window.opener.func1();"/>
+<input type="button" value="re function call" onclic="method2();"/>
 
 </body>
 
