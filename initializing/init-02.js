@@ -2,6 +2,8 @@ var loopflag=0;
 
 var sellorder=[1,1,1,1,1,0,0,0,0,0,0,0];  // list of ones to sell. order as written in table.
 
+var loopintveral;
+
 function looping(){
 	
 	if(loopflag==0){
@@ -23,3 +25,6 @@ function showmin(){
 
 
 
+function startsell(){
+	loopinterval=setInterval(looping,300);
+}
