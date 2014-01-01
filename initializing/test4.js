@@ -52,12 +52,10 @@ function sellwin(){
 function test(){
 	var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/sell_window_ver2.html";
 	$.get(testurl,function(data,status){
-		sellwinhtml=data;
+		var win=window.open("","sell_window","width=300,height=400");
+		win.document.write(data);
 	});
 	
-	
-	var win=window.open("","name","width=300,height=300");
-	win.setTimeout(5000);
-	win.document.write(sellwinhtml);
+
 	
 }
