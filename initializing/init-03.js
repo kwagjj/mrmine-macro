@@ -37,6 +37,7 @@ function stopsell(){
 function sellwin(){
 
 	 $.get(url,function(data,status){
+	 	alert("activated");
       sellwinhtml=data;
     });
 	
