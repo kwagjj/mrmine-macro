@@ -16,16 +16,11 @@
 	var outarray=new Array();
 	
 	function load(){
-		
-		document.getElementById("tb1").value="";
-		
+
 		sellarray=window.opener.sellorder;
 		
 		for(i=0;i<sellarray.length;i++){
 			
-			
-			
-			document.getElementById("tb1").value+=sellarray[i]+" ";
 			
 			if(sellarray[i]==1){
 				document.getElementById("CB"+i).checked=true;
@@ -37,8 +32,7 @@
   
 	function apply(){
         
-        var tb=document.getElementById("out_tb");
-      tb.value="";
+    
 		for(i=0;i<sellarray.length;i++){
 			token=document.getElementById("CB"+i).checked;
 			
@@ -48,8 +42,7 @@
 			else{
 				outarray[i]=0;
 			}
-			
-			tb.value+=outarray[i]+" ";
+
 		}
 		
 		window.opener.sellorder=outarray;
