@@ -1,4 +1,5 @@
 var loopflag=0;
+var sellwinhtml;
 
 var sellorder=[1,1,1,1,1,0,0,0,0,0,0,0];  // list of ones to sell. order as written in table.
 
@@ -33,7 +34,15 @@ function stopsell(){
 	clearInterval(loopinterval);	
 }
 
-function sell(){
-	var url="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/sell_window_ver1.0.html"
-	var w=window.open(url,"sell_window","width=300,height=450");
+function sellwin(){
+
+	 $.get(url,function(data,status){
+      sellwinhtml=data;
+    });
+	
+	var win=window.open("","sell_window","width=300,height=400");  
+        win.document.write(sellwinhtml);
+        win.load();
+	
+	
 }
