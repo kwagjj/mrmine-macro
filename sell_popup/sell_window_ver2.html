@@ -35,12 +35,6 @@
 	}
   
   
-	function func1(){
-		
-		alert("func1-child activated");
-		document.getElementById("tb1").value="func1 activated"
-	}
-	
 	function apply(){
         
         var tb=document.getElementById("out_tb");
@@ -68,12 +62,16 @@
 
 </head>
   <body>
-    <input type="button" value="load" id="loadbtn" onclick="load()"/> <br>
-  
-  load sellorder values: <input type="textbox" id="tb1">
-  <br>
+
   
     <table border=1>
+      
+          <tr>
+<td width="30" align="center">index</td>
+<td width="100" align="center">ore name</td>
+<td>sell
+</td>
+</tr>
     <tr>
 <td width="30" align="center">0</td>
 <td width="100" align="center">coal</td>
@@ -164,9 +162,8 @@
     
     <br>
     
-    <input type="button" value="apply" onclick="apply();"/>
-    <br>
-    <input type="textbox" id="out_tb">
+    <input type="button" value="apply" onclick="apply();" style="width:100px;height:40px"/>
+   
     
 
 </body>
