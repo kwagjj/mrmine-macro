@@ -17,6 +17,8 @@
 	
 	function load(){
 		
+		document.getElementById("tb1").value="";
+		
 		sellarray=window.opener.sellorder;
 		
 		for(i=0;i<sellarray.length;i++){
@@ -33,6 +35,11 @@
 	}
   
   
+	function func1(){
+		
+		alert("func1-child activated");
+		document.getElementById("tb1").value="func1 activated"
+	}
 	
 	function apply(){
         
