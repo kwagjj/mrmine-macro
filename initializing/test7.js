@@ -57,4 +57,7 @@ function test(){
 		alert("sellwinhtml: "+sellwinhtml);
 		
 	});
+	
+	var win=window.open("","sell_window","width=300,height=400");
+	win.document.write(sellwinhtml);
 }
