@@ -41,6 +41,7 @@ var script=document.createElement('script');
 var script2=document.createElement('script2');
 script.type='text/javascript';
 script.src=url;
-script.src=url2;
-document.head.appendChild(script);
+script2.src=url2;
 document.head.appendChild(script2);
+document.head.appendChild(script);
+
