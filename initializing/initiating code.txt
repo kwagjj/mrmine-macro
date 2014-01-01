@@ -35,13 +35,22 @@ document.head.appendChild(script);
 
 // for init-03.js
 
+  var url="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+  var script=document.createElement('script');
+  
+  script.src=url;
+  document.head.appendChild(script); //inserted jQuery initiation code
+
+function sload(){
+  
 var url="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/init-03.js";
-var url2="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js";
+
 var script=document.createElement('script');
-var script2=document.createElement('script2');
+
 script.type='text/javascript';
 script.src=url;
-script2.src=url2;
-document.head.appendChild(script2);
-document.head.appendChild(script);
 
+document.head.appendChild(script); 
+  
+}
+        
