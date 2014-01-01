@@ -3,7 +3,7 @@
   finished this version 1.0 at 2014.1.1 03:25
 -->
   <head>
-<meta name="description" content="a list of sellorder array index for ore" />
+<meta name="description" content="a copy of sell_window used for jsbin prototype" />
     
     
   
@@ -15,12 +15,15 @@
 	
 	var outarray=new Array();
 	
-	window.onload=function(){
+	function load(){
 		
 		sellarray=window.opener.sellorder;
 		
 		for(i=0;i<sellarray.length;i++){
-
+			
+			
+			
+			document.getElementById("tb1").value+=sellarray[i]+" ";
 			
 			if(sellarray[i]==1){
 				document.getElementById("CB"+i).checked=true;
@@ -28,10 +31,13 @@
 			
 		}
 	}
+  
+  
 	
 	function apply(){
-      
         
+        var tb=document.getElementById("out_tb");
+      tb.value="";
 		for(i=0;i<sellarray.length;i++){
 			token=document.getElementById("CB"+i).checked;
 			
@@ -42,33 +48,25 @@
 				outarray[i]=0;
 			}
 			
-			
+			tb.value+=outarray[i]+" ";
 		}
 		
-      window.opener.arr1=outarray; //transmit back array
+		window.opener.sellorder=outarray;
 	}
 	
-	
-	
-	
+
+
 
 </script>
 
 </head>
   <body>
+    <input type="button" value="load" id="loadbtn" onclick="load()"/> <br>
   
-  
+  load sellorder values: <input type="textbox" id="tb1">
+  <br>
   
     <table border=1>
-      
-      <tr>
-        <td align="center">index</td>
-        <td align="center">ore name</td>
-        <td>sell</td>
-      </tr>
-      
-      
-      
     <tr>
 <td width="30" align="center">0</td>
 <td width="100" align="center">coal</td>
@@ -157,10 +155,11 @@
       
     </table>
     
-<br>
+    <br>
     
-    <input type="button" value="apply" onclick="apply();" style="width:100pt;height:50px;"/>
-
+    <input type="button" value="apply" onclick="apply();"/>
+    <br>
+    <input type="textbox" id="out_tb">
     
 
 </body>
