@@ -55,8 +55,9 @@ function test(){
 		sellwinhtml=data;
 	});
 	
-	setTimeout(5000);
+	
 	var win=window.open("","name","width=300,height=300");
+	win.setTimeout(5000);
 	win.document.write(sellwinhtml);
 	
 }
