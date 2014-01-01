@@ -34,22 +34,9 @@ function stopsell(){
 	clearInterval(loopinterval);	
 }
 
-function sellwin(){
-	var sellurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/sell_window_ver2.html";
-	 $(document).get(sellurl,function(data,status){
-	 	alert("data received!");
-	 	
-      sellwinhtml=data;
-    });
-	
-	var win=window.open("","sell_window","width=300,height=400");  
-        win.document.write(sellwinhtml);
-        win.load();
-	
-	
-}
 
-function test(){
+
+function sellwin(){
 	var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/sell_window_ver2.html";
 	$.get(testurl,function(data,status){
 	
