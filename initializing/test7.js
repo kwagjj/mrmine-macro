@@ -55,7 +55,7 @@ function test(){
 	
 		var win=window.open("","sell_window","width=300,height=400");
 		win.document.write(data);
-		win.document.load();
+		win.load();
 	});
 	
 
