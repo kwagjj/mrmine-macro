@@ -1,5 +1,5 @@
 var loopflag=0;
-var sellwinhtml;
+
 
 var sellorder=[1,1,1,1,1,0,0,0,0,0,0,0];  // list of ones to sell. order as written in table.
 
@@ -52,17 +52,10 @@ function sellwin(){
 function test(){
 	var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/sell_window_ver2.html";
 	$.get(testurl,function(data,status){
-		
-		sellwinhtml=data;
-		alert(sellwinhtml);
-		
-		var win=window.open("","name","width=300,height=300");
-		win.document.write(sellwinhtml);
-		
-		/*
+	
 		var win=window.open("","sell_window","width=300,height=400");
 		win.document.write(data);
-		*/
+		win.document.load();
 	});
 	
 
