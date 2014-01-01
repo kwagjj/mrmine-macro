@@ -52,6 +52,7 @@ function sellwin(){
 function test(){
 	var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/sell_window_ver2.html";
 	$.get(testurl,function(data,status){
-		alert("status: "+status);
+		alert("status: "+status+"\ndata: \n"+data);
+		
 	});
 }
