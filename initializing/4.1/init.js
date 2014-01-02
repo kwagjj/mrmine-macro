@@ -6,6 +6,7 @@ var win;
 
 
 function startsell(){
+	document.getElementById("PLACE1").onclick();
 	loopinterval=setInterval(looping,500);
 	sellstatus=1;
 }
