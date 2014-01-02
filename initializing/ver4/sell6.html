@@ -43,6 +43,25 @@
 	}
   
   
+	function apply(){
+        
+    
+		for(i=0;i<sellarray.length;i++){
+			token=document.getElementById("CB"+i).checked;
+			
+			if(token==true){
+				outarray[i]=1;
+			}
+			else{
+				outarray[i]=0;
+			}
+
+		}
+		
+		window.opener.sellorder=outarray;
+		window.close();
+	}
+	
   
   function togglesell(){
   	
@@ -59,6 +78,10 @@
   		sellstatus=1;
   		btn.value="stop sell";
   		window.opener.sellstatus=1;
+      
+      //also should sendback sellorder to parent
+      
+      apply();    // reusing apply() function from previous version.
   		
   	}
       
