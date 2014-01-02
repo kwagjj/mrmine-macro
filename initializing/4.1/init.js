@@ -62,8 +62,11 @@ function sellwin(){
 shortcut.add("s",function sellwin(){
 	
 	
-	if(win!=undefined && !win.closed)
-	win.close();
+	if(win!=undefined && !win.closed){ //when opened window exists,
+	win.close(); // close the opened window
+	win=undefined; // nullify the win variable. give the win variable a fresh start;
+	
+	}
   
 
 	var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/ver4/sell_window_ver4.html";
