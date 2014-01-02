@@ -16,7 +16,7 @@
   
 
 // insert init.js
-var url="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/ver4/init.js";
+var url="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/4.1/init1.js";
 
 var script=document.createElement('script');
 script.type='text/javascript';
