@@ -45,10 +45,9 @@ function showmin(){
 
 function sellwin(){
   
-  var input="sell_window_ver4";
-  //input=document.getElementById("tb").value;
   
-	var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/ver4/"+input+".html";
+  
+	var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/ver4/sell1.html";
 	$.get(testurl,function(data,status){
 	
 		var win=window.open("","sell_window","width=300,height=400");
@@ -57,12 +56,13 @@ function sellwin(){
 	});
 		
 }
-
 */
+
+
 
 shortcut.add("s",function sellwin(){
   
-  
+
 	var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/ver4/sell_window_ver4.html";
 	$.get(testurl,function(data,status){
 	
@@ -74,3 +74,4 @@ shortcut.add("s",function sellwin(){
 } );
 
 
+ 
