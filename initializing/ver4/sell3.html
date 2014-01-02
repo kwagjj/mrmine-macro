@@ -14,6 +14,7 @@
 	var sellarray;
 	
 	var outarray=new Array();
+	var sellstatus;
 	
 	function load(){
 
@@ -30,7 +31,7 @@
       
       /*added code for ver4. init togglebtn value to start/stop */
       
-      var sellstatus=window.opener.sellstatus;
+      sellstatus=window.opener.sellstatus;
       var togglebtn=document.getElementById("togglebtn");
       if(sellstatus==1){
         togglebtn.value="stop sell";
@@ -62,7 +63,18 @@
 	}
 	
   
-  function togglebtn(){
+  function togglesell(){
+  	
+  	var btn=document.getElementById("togglebtn");
+  	// change togglebtn.value
+  	if(sellstatus==1){
+  		btn.value="stop sell";
+  		sellstatus=0;
+  	}
+  	else{
+  		btn.value="continue sell";
+  		sellstatus=1;
+  	}
       
   }
 
