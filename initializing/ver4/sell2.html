@@ -3,7 +3,7 @@
   finished this version 1.0 at 2014.1.1 03:25
 -->
   <head>
-<meta name="description" content="a copy of sell_window used for jsbin prototype" />
+<meta name="description" content="sell_window for init_ver4" />
     
     
   
@@ -27,6 +27,18 @@
 			}
 			
 		}
+      
+      /*added code for ver4. init togglebtn value to start/stop */
+      
+      var sellstatus=window.opener.sellstatus;
+      var togglebtn=document.getElementById("togglebtn");
+      if(sellstatus==1){
+        togglebtn.value="stop sell";
+      }
+      else{
+        togglebtn.value="continue sell";
+      }
+      
 	}
   
   
@@ -49,6 +61,10 @@
 		window.close();
 	}
 	
+  
+  function togglebtn(){
+      
+  }
 
 
 
@@ -157,6 +173,8 @@
     <br>
     
     <input type="button" value="apply" onclick="apply();" style="width:100px;height:40px"/>
+    
+    <input type="button" id="togglebtn" value="init" onclick="togglesell();" style="width:100px;height:40px">
    
     
 
