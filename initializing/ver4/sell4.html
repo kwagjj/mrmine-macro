@@ -66,14 +66,19 @@
   function togglesell(){
   	
   	var btn=document.getElementById("togglebtn");
-  	// change togglebtn.value
-  	if(sellstatus==1){
-  		btn.value="stop sell";
+  	
+  	if(sellstatus==1){// currently selling -> should be showing "stop sell" but after pressing, show "continue sell" & change sellstatus=0 & sendback sellstatus=0
+  		
   		sellstatus=0;
+  		btn.value="continue sell"
+  		window.opener.sellstatus=0;
   	}
-  	else{
-  		btn.value="continue sell";
+  	else{//when sellstatus=0, currently not selling. -> should show "continue sell" but after pressing, show "stop sell" and change sellstatus=1 and send to parent: sellstatus=1
+  		
   		sellstatus=1;
+  		btn.value="stop sell";
+  		window.opener.sellstatus=1;
+  		
   	}
       
   }
