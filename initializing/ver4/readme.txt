@@ -4,7 +4,7 @@ development log:
 
 issue#1: adding hotkey that will pop up the sell_window
 	- due to lack of knowledge on javascript, planning to utilize shortcut.js downloaded from a website(http://www.openjs.com/scripts/events/keyboard_shortcuts/)
-	
+	- I did utilize the shortcut.js but it doesn't allow callback functions 
 
 
 
@@ -26,3 +26,13 @@ issue#2: adding buttons that will start/stop selling
 	4. delete apply btn and add close btn
 	
 	** issue#2 complete
+	
+issue#3: the looping is not properly utilizing loopflag and is not yet fully corporated with newly introduced sellstatus variable
+	
+	1. take care of looping
+		- perhaps remove setInterval and use "while loop + timer" and change looping with loopflag/sellstatus
+		- loopflag and sellstatus obviously seems similar.
+	2. then incorporate 'sellstatus' variable
+	
+	
+	- infinite while loop doesn't seem to work. guess I have to use the setInterval eventually.
