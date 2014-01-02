@@ -60,13 +60,10 @@ function sellwin(){
 
 
 shortcut.add("s",function sellwin(){
-	alert('1');	
+	
 	
 	if(win!=undefined && !win.closed)
 	win.close();
-	
-	
-	alert('2');
   
 
 	var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/ver4/sell_window_ver4.html";
