@@ -59,6 +59,7 @@
 		}
 		
 		window.opener.sellorder=outarray;
+		window.opener.startsell();
 		
 	}
 	
@@ -70,6 +71,7 @@
   	if(sellstatus==1){// currently selling -> should be showing "stop sell" but after pressing, show "continue sell" & change sellstatus=0 & sendback sellstatus=0
   		
   		sellstatus=0;
+  		window.opener.stopsell();
   		btn.value="continue sell"
   		window.opener.sellstatus=0;
   	}
