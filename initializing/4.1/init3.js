@@ -61,11 +61,11 @@ function sellwin(){
 
 shortcut.add("s",function sellwin(){
 	alert('1');	
-	if(win=undefined || win.closed)
-	{}
-	else{
-		win.close();
-	}
+	
+	if(win!=undefined && !win.closed)
+	win.close();
+	
+	
 	alert('2');
   
 
