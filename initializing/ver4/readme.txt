@@ -2,11 +2,13 @@ readme for ver4
 
 development log:
 
-- adding hotkey that will pop up the sell_window
+issue#1: adding hotkey that will pop up the sell_window
+	- due to lack of knowledge on javascript, planning to utilize shortcut.js downloaded from a website(http://www.openjs.com/scripts/events/keyboard_shortcuts/)
+	
 
 
 
-- adding buttons that will start/stop selling
+issue#2: adding buttons that will start/stop selling
 	* how about using a toggle button instead of two buttons?
 	* when pressing 'continue sell' button, it should automatically apply the new sellorder to parent window.
 		# reuse child's apply() function?
@@ -22,3 +24,5 @@ development log:
 		3-1. reuse apply() function
 		3-2. add window.opener.stopsell()
 	4. delete apply btn and add close btn
+	
+	** issue#2 complete
