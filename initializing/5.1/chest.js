@@ -2,21 +2,10 @@
 
 var chestlog="";
 var chestcount=0;
-var intervalobj;
-<<<<<<< HEAD
-<<<<<<< HEAD
+var chestintv;
 var chestwin;
 var checkstatus=0;
-=======
-var checkstatus=0;
-var chestwin;
 
->>>>>>> 388977242c0d0facdf6bd9da7d92a841ec37368f
-=======
-var checkstatus=0;
-var chestwin;
-
->>>>>>> 388977242c0d0facdf6bd9da7d92a841ec37368f
 
 function date_time(){
 		var date = new Date();
@@ -78,40 +67,22 @@ function chestcheck(){
 			}
 
 		}
-
 		
-
-		// display chestcount somewhere
-		
-}1;
+}
 
 function startcheck(){
-<<<<<<< HEAD
-<<<<<<< HEAD
-    intervalobj=setInterval(checkchest,3000);
+
+    chestintv=setInterval(chestcheck,3000);
 	checkstatus=1;
-=======
-    intervalobj=setInterval(chestcheck,3000);
-    checkstatus=1;
->>>>>>> 388977242c0d0facdf6bd9da7d92a841ec37368f
-=======
-    intervalobj=setInterval(chestcheck,3000);
-    checkstatus=1;
->>>>>>> 388977242c0d0facdf6bd9da7d92a841ec37368f
+
 }
 
 
 function stopcheck(){
-    clearInterval(intervalobj);
-<<<<<<< HEAD
-<<<<<<< HEAD
+    clearInterval(chestintv);
+
 	checkstatus=0;
-=======
-    checkstatus=0;
->>>>>>> 388977242c0d0facdf6bd9da7d92a841ec37368f
-=======
-    checkstatus=0;
->>>>>>> 388977242c0d0facdf6bd9da7d92a841ec37368f
+
     
 }
 
@@ -126,8 +97,8 @@ shortcut.add("c",function chestlog(){
         }
   
 
-        var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/5.1/chestlog.html";
-        $.get(testurl,function(data,status){
+        var chesturl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/5.1/chestlog.html";
+        $.get(chesturl,function(data,status){
         
                 chestwin=window.open("","chestlog","width=300,height=400");
                 chestwin.document.write(data);
