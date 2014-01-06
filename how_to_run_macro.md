@@ -3,11 +3,11 @@ HOW TO RUN THE MACRO - TUTORIAL
   
   #1. all the version files are in the "./versions" folder. It has been sorted by each version.
   
-  #2. each versions has a file named 'snippetcode.js' or in '.txt' file. It doesn't matter. The contetns are pretty much the same. All we have to do for each versions is code the entire code in the 'snippetcode.js'(or .txt) and paste it into the Mr.Mine game page.
+  #2. each versions has a file named 'snippetcode.js' or in '.txt' file. It doesn't matter. The contents are pretty much the same. HOWEVER, without touching all those files, all we have to touch for each versions is code in the 'snippetcode.js'(or .txt).
   
-  #3. How and where to paste the code is the problem then. First, the user must be a chrome user. This is quite obvious since the Mr.Mine game only runs on chrome. So you'd already have chrome anyway.
+  #3. What to do with the contents of the 'snippetcode.js' file is the problem then. First, the user must be a chrome user. This is quite obvious since the Mr.Mine game only runs on chrome. So you'd already have chrome anyway.
   
-  #4. enter your own mr.mine game.
+  #4. enter(log in) your own mr.mine game.
   
   #5. when your game is loaded(and is showing the view of the inside of the mine, to be specific) press 'Ctrl+Shift+J' in order to open chrome's developer's tool.
   
