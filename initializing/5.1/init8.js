@@ -211,3 +211,5 @@ function updatelog(){
 // code for checking shortcut functionality
 
 shortcut.add("a",function (){alert('done');});
+
+alert('loaded');
