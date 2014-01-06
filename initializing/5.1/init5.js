@@ -178,7 +178,7 @@ function openchestlog(){
 
 */
 
-shortcut.add("c",function chestlog(){
+shortcut.add("c",function openchestlog(){
         
         
         
@@ -196,7 +196,8 @@ shortcut.add("c",function chestlog(){
                 chestwin=window.open("","chestlog","width=300,height=400");
                 chestwin.document.write(data);
                 chestwin.load();
-				chestlog+="-----checked at "+date_time()+" -------";
+		var text2="-----checked at "+date_time()+" -------";
+		chestlog+=text2;
         });
                 
 } );
