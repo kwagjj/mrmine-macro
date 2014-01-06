@@ -1,6 +1,5 @@
-HOW TO RUN THE MACRO TUTORIAL
-
-=============
+GitHub Flavored Markdown
+================================
 
   #1. all the version files are in the "./versions" folder. It has been sorted by each version.
 
