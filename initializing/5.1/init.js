@@ -167,9 +167,10 @@ function openchestlog(){
                 chestwin=window.open("","chestlog","width=300,height=400");
                 chestwin.document.write(data);
                 chestwin.load();
+                */
         });
         
-        */
+        
                 
 }
 
