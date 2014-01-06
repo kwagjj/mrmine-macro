@@ -1,5 +1,4 @@
 
-
 var sellstatus=0; // if selling=1, not selling=0;
 var sellorder=[1,1,1,1,1,0,0,0,0,0,0,0];  // list of ones to sell. order as written in table.
 
@@ -40,7 +39,7 @@ function looping(){
 shortcut.add("s",function sellwin(){
   
 
-	var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/ver4/sell_window_ver4.html";
+	var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/5.1/sellwindow.html";
 	$.get(testurl,function(data,status){
 	
 		var win=window.open("","sell_window","width=300,height=400");
