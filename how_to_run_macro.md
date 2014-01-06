@@ -1,5 +1,7 @@
 HOW TO RUN THE MACRO TUTORIAL
 
+=============
+
 #1. all the version files are in the "./versions" folder. It has been sorted by each version.
 
 #2. each versions has a file named 'snippetcode.js' or in '.txt' file. It doesn't matter. The contetns are pretty much the same. All we have to do for each versions is code the entire code in the 'snippetcode.js'(or .txt) and paste it into the Mr.Mine game page.
