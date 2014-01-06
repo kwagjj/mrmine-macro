@@ -1,0 +1,59 @@
+<html>
+<!--
+  Created using jsbin.com
+  Source can be edited via http://jsbin.com/IQuHOqa/1/edit
+-->
+  <head>
+    
+  <script>
+
+  
+  function load(){
+   var text=window.opener.chestlog;
+    document.getElementById("ta").value=text;
+    
+    var checkstatus=window.opener.checkstatus;
+    if(checkstatus==1){
+      document.getElementById("toggle").value="stop check";
+    }
+    else{
+      document.getElementById("toggle").value="cont. check";
+    }
+    
+    
+  }
+  
+  function erase(){
+     window.opener.chestlog=""; 
+     document.getElementById("ta").value="";
+  }
+  
+  function toggle(){
+    var btn=document.getElementById("toggle");
+    if(checkstatus==1){//if it is under checking...
+      checkstatus=0;
+      window.opener.stopcheck();
+      btn.value="cont. check";
+    }
+    else{//if it is not checking..
+      checkstatus=1;
+      window.opener.startcheck();
+      btn.value="stop check";
+    }
+      
+      
+    
+  }
+</script>
+</head>
+  <body>
+    <p>description: chestlog window</p>
+    
+    <textarea rows=20 cols=30 id="ta"></textarea>
+    <br>
+    <input type="button" value="erase log" onclick="erase();"/>
+    <input type="button" value="close" onclick="window.close();"/>
+    <input type="button" value="init" onclick="togglecheck();" id="toggle"/>
+
+</body>
+</html>
