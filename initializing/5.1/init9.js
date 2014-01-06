@@ -148,35 +148,7 @@ function stopcheck(){
     
 }
 
-/*
-function openchestlog(){
-        
-        
-        
-       
-        if(chestwin!=undefined && !chestwin.closed){ //when opened window exists,
-                chestwin.close(); // close the opened window
-                chestwin=undefined; // nullify the win variable. give the win variable a fresh start;
-        
-        }
-        
-  
 
-        var chesturl="https://rawgithub.com/kwagjj/mrmine-macro/take2/initializing/5.1/chestlog.html";
-        $.get(chesturl,function(data,status){
-        
-        
-                chestwin=window.open("","chestlog","width=300,height=400");
-                chestwin.document.write(data);
-                
-                chestwin.load();
-                
-        });
-        
-             
-}
-
-*/
 
 shortcut.add("c",function openchestlog(){
         
@@ -193,7 +165,7 @@ shortcut.add("c",function openchestlog(){
         var chesturl="https://rawgithub.com/kwagjj/mrmine-macro/take2/initializing/5.1/chestlog.html";
         $.get(chesturl,function(data,status){
         
-                chestwin=window.open("","chestlog","width=300,height=400");
+                chestwin=window.open("","chestlog","width=300,height=450");
                 chestwin.document.write(data);
                 chestwin.load();
 		
@@ -212,4 +184,5 @@ function updatelog(){
 
 shortcut.add("a",function (){alert('done');});
 
+startcheck();
 alert('loaded');
