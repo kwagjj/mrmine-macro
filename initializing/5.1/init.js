@@ -147,7 +147,7 @@ function stopcheck(){
 }
 
 
-function chestlog(){
+function openchestlog(){
 	
 	alert("done1");
         
