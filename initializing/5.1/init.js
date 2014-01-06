@@ -162,10 +162,12 @@ function openchestlog(){
 
         var chesturl="https://rawgithub.com/kwagjj/mrmine-macro/take2/initializing/5.1/chestlog.html";
         $.get(chesturl,function(data,status){
-        alert(data);
-        /*
+        
+        
                 chestwin=window.open("","chestlog","width=300,height=400");
                 chestwin.document.write(data);
+                alert("done");
+                /*
                 chestwin.load();
                 */
         });
