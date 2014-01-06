@@ -146,7 +146,7 @@ function stopcheck(){
     
 }
 
-
+/*
 function openchestlog(){
 	
 	
@@ -171,13 +171,14 @@ function openchestlog(){
                 
         });
         
-        
-                
+             
 }
 
-/*shortcut.add("c",function chestlog(){
+*/
+
+shortcut.add("c",function chestlog(){
 	
-	alert("done1");
+	
         
         
         if(chestwin!=undefined && !chestwin.closed){ //when opened window exists,
@@ -197,7 +198,7 @@ function openchestlog(){
                 
 } );
 
-*/
+
 
 
 // code for checking shortcut functionality
