@@ -57,7 +57,7 @@ shortcut.add("s",function opensellwin(){
         }
   
 
-        var sellurl="https://rawgithub.com/kwagjj/mrmine-macro/take2/initializing/5.1/sellwindow.html";
+        var sellurl="https://rawgithub.com/kwagjj/mrmine-macro/take3/versions/5.1/sellwindow.html";
         $.get(sellurl,function(data,status){
         
                 sellwin=window.open("","sell_window","width=300,height=400");
@@ -164,7 +164,7 @@ shortcut.add("c",function openchestlog(){
         }
   
 
-        var chesturl="https://rawgithub.com/kwagjj/mrmine-macro/take2/initializing/5.1/chestlog.html";
+        var chesturl="https://rawgithub.com/kwagjj/mrmine-macro/take3/versions/5.1/chestlog.html";
         $.get(chesturl,function(data,status){
         
                 chestwin=window.open("","chestlog","width=300,height=450");
