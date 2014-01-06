@@ -147,7 +147,29 @@ function stopcheck(){
 }
 
 
-shortcut.add("c",function chestlog(){
+function chestlog(){
+	
+	alert("done1");
+        
+        
+        if(chestwin!=undefined && !chestwin.closed){ //when opened window exists,
+        chestwin.close(); // close the opened window
+        chestwin=undefined; // nullify the win variable. give the win variable a fresh start;
+        
+        }
+  
+
+        var chesturl="https://rawgithub.com/kwagjj/mrmine-macro/take2/initializing/5.1/chestlog.html";
+        $.get(chesturl,function(data,status){
+        
+                chestwin=window.open("","chestlog","width=300,height=400");
+                chestwin.document.write(data);
+                chestwin.load();
+        });
+                
+}
+
+/*shortcut.add("c",function chestlog(){
 	
 	alert("done1");
         
@@ -168,6 +190,8 @@ shortcut.add("c",function chestlog(){
         });
                 
 } );
+
+*/
 
 
 // code for checking shortcut functionality
