@@ -1,23 +1,22 @@
 var sellstatus=0; // if selling=1, not selling=0;
 var sellorder=[1,1,1,1,1,0,0,0,0,0,0,0];  // list of ones to sell. order as written in table.
-var win;
-
-var loopintveral;
+var sellwin;
+var sellintv;
 
 
 function startsell(){
-	loopinterval=setInterval(looping,500);
+	sellintv=setInterval(selling,500);
 	sellstatus=1;
 }
 
 function stopsell(){
-	clearInterval(loopinterval);	
+	clearInterval(sellintv);	
 	sellstatus=0;
 }
 
 
 
-function looping(){
+function selling(){
 	
   //perhaps add a code that opends PLACE1 before clicking the sell buttons.. just in case
 	
@@ -34,22 +33,22 @@ function looping(){
 
 
 
-shortcut.add("s",function sellwin(){
+shortcut.add("s",function opensellwin(){
         
         
-        if(win!=undefined && !win.closed){ //when opened window exists,
-        win.close(); // close the opened window
-        win=undefined; // nullify the win variable. give the win variable a fresh start;
+        if(sellwin!=undefined && !sellwin.closed){ //when opened window exists,
+        sellwin.close(); // close the opened window
+        sellwin=undefined; // nullify the win variable. give the win variable a fresh start;
         
         }
   
 
-        var testurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/ver4/sell_window_ver4.html";
-        $.get(testurl,function(data,status){
+        var sellurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/5.1/sellwindow.html";
+        $.get(sellurl,function(data,status){
         
-                win=window.open("","sell_window","width=300,height=400");
-                win.document.write(data);
-                win.load();
+                sellwin=window.open("","sell_window","width=300,height=400");
+                sellwin.document.write(data);
+                sellwin.load();
         });
                 
 } );
