@@ -21,6 +21,8 @@
       document.getElementById("toggle").value="cont. check";
     }
     
+    window.opener.updatelog();
+    
     
   }
   
@@ -51,7 +53,7 @@
   <body>
     <p>description: chestlog window</p>
     
-    <textarea rows=20 cols=30 id="ta"></textarea>
+    <textarea rows=20 cols=40 id="ta"></textarea>
     <br>
     <input type="button" value="erase log" onclick="erase();"/>
     <input type="button" value="close" onclick="window.close();"/>
