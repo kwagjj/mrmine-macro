@@ -29,6 +29,7 @@
   }
   
   function togglecheck(){
+    alert("done1");
     var btn=document.getElementById("toggle");
     
     if(checkstatus==1){//if it is under checking...
@@ -37,7 +38,7 @@
       btn.value="cont. check";
     }
     else{//if it is not checking..
-    
+      alert("done2");
       checkstatus=1;
       window.opener.startcheck();
       btn.value="stop check";
