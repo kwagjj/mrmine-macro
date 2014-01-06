@@ -7,12 +7,13 @@
     
   <script>
 
+  var checkstatus;
   
   function load(){
    var text=window.opener.chestlog;
     document.getElementById("ta").value=text;
     
-    var checkstatus=window.opener.checkstatus;
+    checkstatus=window.opener.checkstatus;
     if(checkstatus==1){
       document.getElementById("toggle").value="stop check";
     }
@@ -29,17 +30,20 @@
   }
   
   function togglecheck(){
-    alert("done1");
-    var btn=document.getElementById("toggle");
     
-    if(checkstatus==1)
-    {
-      alert(checkstatus);
+    var btn=document.getElementById("toggle");
+    if(checkstatus==1){//if it is under checking...
+      checkstatus=0;
+      window.opener.stopcheck();
+      btn.value="cont. check";
     }
-    else{
-      alert(checkstatus);
+    else{//if it is not checking..
+      alert("done2");
+      checkstatus=1;
+      window.opener.startcheck();
+      btn.value="stop check";
     }
-
+      
     
   }
 </script>
