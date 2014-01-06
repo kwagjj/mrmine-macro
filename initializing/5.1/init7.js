@@ -203,7 +203,7 @@ shortcut.add("c",function openchestlog(){
 
 
 function updatelog(){
-	var text2="---UPDATE: "+date_time()+" ---\n";
+	var text2="---PREVIOUS: "+date_time()+" ---\n";
 	chestlog+=text2;
 }
 
