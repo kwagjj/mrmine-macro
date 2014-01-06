@@ -3,6 +3,8 @@
 var chestlog="";
 var chestcount=0;
 var intervalobj;
+var checkstatus=0;
+var chestwin;
 
 
 function date_time(){
@@ -74,11 +76,13 @@ function chestcheck(){
 
 function startcheck(){
     intervalobj=setInterval(chestcheck,3000);
+    checkstatus=1;
 }
 
 
 function stopcheck(){
     clearInterval(intervalobj);
+    checkstatus=0;
     
 }
 
