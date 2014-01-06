@@ -7,7 +7,7 @@
 
 
 //inserting shortcut.js plugin
-  var url="https://rawgithub.com/kwagjj/mrmine-macro/take2/basic_js_files/shortcut.js";
+  var url="https://rawgithub.com/kwagjj/mrmine-macro/take3/basic_js_files/shortcut.js";
   var script=document.createElement('script');
   
   script.src=url;
@@ -16,7 +16,7 @@
   
 
 // insert init.js
-var url="https://rawgithub.com/kwagjj/mrmine-macro/take2/initializing/5.1/init.js";
+var url="https://rawgithub.com/kwagjj/mrmine-macro/take3/versions/5.1/init.js";
 
 var script=document.createElement('script');
 script.type='text/javascript';
