@@ -157,7 +157,7 @@ function openchestlog(){
         	chestwin=undefined; // nullify the win variable. give the win variable a fresh start;
         
         }
-        alert("done");
+        
   
 
         var chesturl="https://rawgithub.com/kwagjj/mrmine-macro/take2/initializing/5.1/chestlog.html";
