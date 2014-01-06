@@ -23,11 +23,5 @@ script.type='text/javascript';
 script.src=url;
 document.head.appendChild(script);  
 
-// insert chest.js
-var url="https://rawgithub.com/kwagjj/mrmine-macro/take2/initializing/5.1/chest.js";
 
-var script=document.createElement('script');
-script.type='text/javascript';
-script.src=url;
-document.head.appendChild(script);  
 
