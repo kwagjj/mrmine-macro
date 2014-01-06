@@ -15,7 +15,7 @@ var checkstatus=0;
 
 // function for selling
 function startsell(){
-        sellintv=setInterval(selling,500);
+        sellintv=setInterval(selling,1000);
         sellstatus=1;
 }
 
@@ -29,7 +29,7 @@ function stopsell(){
 function selling(){
         
   //perhaps add a code that opends PLACE1 before clicking the sell buttons.. just in case
-        
+        document.getElementById("PLACE1").onclick();
                 for(i=0;i<sellorder.length;i++){        
                         if(sellorder[i]==1){
                                 var j=i+2;
@@ -37,6 +37,8 @@ function selling(){
                         
                 }        
         }
+        
+        document.getElementById("CLOSEs").onclick();
         
 }
 
