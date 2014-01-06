@@ -1,4 +1,3 @@
-
 // global variables for selling
 var sellstatus=0; // if selling=1, not selling=0;
 var sellorder=[1,1,1,1,1,0,0,0,0,0,0,0];  // list of ones to sell. order as written in table.
@@ -54,7 +53,7 @@ shortcut.add("s",function opensellwin(){
         }
   
 
-        var sellurl="https://rawgithub.com/kwagjj/mrmine-macro/master/initializing/5.1/sellwindow.html";
+        var sellurl="https://rawgithub.com/kwagjj/mrmine-macro/take2/initializing/5.1/sellwindow.html";
         $.get(sellurl,function(data,status){
         
                 sellwin=window.open("","sell_window","width=300,height=400");
@@ -149,6 +148,8 @@ function stopcheck(){
 
 
 shortcut.add("c",function chestlog(){
+	
+	alert("done1");
         
         
         if(chestwin!=undefined && !chestwin.closed){ //when opened window exists,
