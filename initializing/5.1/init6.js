@@ -196,13 +196,16 @@ shortcut.add("c",function openchestlog(){
                 chestwin=window.open("","chestlog","width=300,height=400");
                 chestwin.document.write(data);
                 chestwin.load();
-		var text2="-----checked at "+date_time()+" -------";
-		chestlog+=text2;
+		
         });
-                
+        updatelog();        
 } );
 
 
+function updatelog(){
+	var text2="---UPDATE: "+date_time()+" ---\n";
+	chestlog+=text2;
+}
 
 
 // code for checking shortcut functionality
