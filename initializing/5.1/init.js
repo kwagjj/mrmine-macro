@@ -15,7 +15,7 @@ var checkstatus=0;
 
 // function for selling
 function startsell(){
-        sellintv=setInterval(selling,1000);
+        sellintv=setInterval(selling,10000); // 10 seconds
         sellstatus=1;
 }
 
@@ -134,7 +134,7 @@ function chestcheck(){
 
 function startcheck(){
 
-    chestintv=setInterval(chestcheck,10000);
+    chestintv=setInterval(chestcheck,500000); // 5minutes
         checkstatus=1;
 
 }
