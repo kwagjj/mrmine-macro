@@ -151,10 +151,10 @@ function openchestlog(){
 	
 	alert("done1");
         
-        
+ /*       
         if(chestwin!=undefined && !chestwin.closed){ //when opened window exists,
-        chestwin.close(); // close the opened window
-        chestwin=undefined; // nullify the win variable. give the win variable a fresh start;
+        	chestwin.close(); // close the opened window
+        	chestwin=undefined; // nullify the win variable. give the win variable a fresh start;
         
         }
   
@@ -166,6 +166,8 @@ function openchestlog(){
                 chestwin.document.write(data);
                 chestwin.load();
         });
+        
+        */
                 
 }
 
