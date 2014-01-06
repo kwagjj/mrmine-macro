@@ -15,29 +15,29 @@ var checkstatus=0;
 
 // function for selling
 function startsell(){
-	sellintv=setInterval(selling,500);
-	sellstatus=1;
+        sellintv=setInterval(selling,500);
+        sellstatus=1;
 }
 
 function stopsell(){
-	clearInterval(sellintv);	
-	sellstatus=0;
+        clearInterval(sellintv);        
+        sellstatus=0;
 }
 
 
 
 function selling(){
-	
+        
   //perhaps add a code that opends PLACE1 before clicking the sell buttons.. just in case
-	
-		for(i=0;i<sellorder.length;i++){	
-			if(sellorder[i]==1){
-				var j=i+2;
-				document.getElementById("SB"+j).onclick();
-			
-		}	
+        
+                for(i=0;i<sellorder.length;i++){        
+                        if(sellorder[i]==1){
+                                var j=i+2;
+                                document.getElementById("SB"+j).onclick();
+                        
+                }        
         }
-	
+        
 }
 
 
@@ -68,10 +68,10 @@ shortcut.add("s",function opensellwin(){
  
  
 function date_time(){
-		var date = new Date();
+                var date = new Date();
         
         month = date.getMonth()+1;
-		
+                
         
         d = date.getDate();
         
@@ -92,48 +92,48 @@ function date_time(){
         }
         result = ' '+month+'-'+d+' '+h+':'+m+':'+s;
         return result;
-		
+                
 
 }
 
 
 
 function chestcheck(){
-		document.getElementById("DOWNALLB").onclick(); // press downallb
-		var arr='abcdefghij';
-		var keeploop=1;
-		chestcount=0;
+                document.getElementById("DOWNALLB").onclick(); // press downallb
+                var arr='abcdefghij';
+                var keeploop=1;
+                chestcount=0;
 
-		// loop for checking and clicking chests on the 5th line
-		while(keeploop==1){
+                // loop for checking and clicking chests on the 5th line
+                while(keeploop==1){
 
 
-			for(i=0;i<10;i++)
-			{
-					document.getElementById("L5"+arr[i]).onclick();
-					if(document.getElementById("CHESTD").style.visibility=="visible"){
-						chestcount++;
-					}
-					document.getElementById('OPENIT').onclick();
-					document.getElementById('OPENIT').onclick();
-			} //finished checking the botton line
+                        for(i=0;i<10;i++)
+                        {
+                                        document.getElementById("L5"+arr[i]).onclick();
+                                        if(document.getElementById("CHESTD").style.visibility=="visible"){
+                                                chestcount++;
+                                        }
+                                        document.getElementById('OPENIT').onclick();
+                                        document.getElementById('OPENIT').onclick();
+                        } //finished checking the botton line
 
-			document.getElementById("UPB").onclick(); // go one line up
-			
-			if(document.getElementById("HELPBUTTON").style.visibility=="visible"){
-				keeploop=0;
-				var text1=date_time()+" -- "+chestcount+" checked\n";
-				chestlog+=text1;
-			}
+                        document.getElementById("UPB").onclick(); // go one line up
+                        
+                        if(document.getElementById("HELPBUTTON").style.visibility=="visible"){
+                                keeploop=0;
+                                var text1=date_time()+" -- "+chestcount+" looted\n";
+                                chestlog+=text1;
+                        }
 
-		}
-		
+                }
+                
 }
 
 function startcheck(){
 
-    chestintv=setInterval(chestcheck,3000);
-	checkstatus=1;
+    chestintv=setInterval(chestcheck,10000);
+        checkstatus=1;
 
 }
 
@@ -141,20 +141,20 @@ function startcheck(){
 function stopcheck(){
     clearInterval(chestintv);
 
-	checkstatus=0;
+        checkstatus=0;
 
     
 }
 
 /*
 function openchestlog(){
-	
-	
+        
+        
         
        
         if(chestwin!=undefined && !chestwin.closed){ //when opened window exists,
-        	chestwin.close(); // close the opened window
-        	chestwin=undefined; // nullify the win variable. give the win variable a fresh start;
+                chestwin.close(); // close the opened window
+                chestwin=undefined; // nullify the win variable. give the win variable a fresh start;
         
         }
         
@@ -177,8 +177,8 @@ function openchestlog(){
 */
 
 shortcut.add("c",function chestlog(){
-	
-	
+        
+        
         
         
         if(chestwin!=undefined && !chestwin.closed){ //when opened window exists,
@@ -194,6 +194,7 @@ shortcut.add("c",function chestlog(){
                 chestwin=window.open("","chestlog","width=300,height=400");
                 chestwin.document.write(data);
                 chestwin.load();
+				chestlog+="-----checked at "+date_time()+" -------";
         });
                 
 } );
@@ -204,4 +205,3 @@ shortcut.add("c",function chestlog(){
 // code for checking shortcut functionality
 
 shortcut.add("a",function (){alert('done');});
-
