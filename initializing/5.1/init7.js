@@ -198,7 +198,7 @@ shortcut.add("c",function openchestlog(){
                 chestwin.load();
 		
         });
-        updatelog();        
+             
 } );
 
 
