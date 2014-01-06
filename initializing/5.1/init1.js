@@ -3,6 +3,7 @@ var sellstatus=0; // if selling=1, not selling=0;
 var sellorder=[1,1,1,1,1,0,0,0,0,0,0,0];  // list of ones to sell. order as written in table.
 var sellwin;
 var sellintv;
+var sellintv_time=5000; // 5 seconds
 
 
 // global variables for checkchest
@@ -11,11 +12,12 @@ var chestcount=0;
 var chestintv;
 var chestwin;
 var checkstatus=0;
+var chestintv_time=300000 // 1minute
 
 
 // function for selling
 function startsell(){
-        sellintv=setInterval(selling,10000); // 10 seconds
+        sellintv=setInterval(selling,sellintv_time); // 10 seconds
         sellstatus=1;
 }
 
@@ -134,7 +136,7 @@ function chestcheck(){
 
 function startcheck(){
 
-    chestintv=setInterval(chestcheck,500000); // 5minutes
+    chestintv=setInterval(chestcheck,chestintv_time); 
         checkstatus=1;
 
 }
