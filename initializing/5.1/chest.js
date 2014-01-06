@@ -3,7 +3,7 @@
 var chestlog="";
 var chestcount=0;
 var intervalobj;
-var chestlog;
+
 
 function date_time(){
 		var date = new Date();
@@ -73,7 +73,7 @@ function chestcheck(){
 }
 
 function startcheck(){
-    intervalobj=setInterval(checkchest,3000);
+    intervalobj=setInterval(chestcheck,3000);
 }
 
 
@@ -103,3 +103,5 @@ shortcut.add("c",function chestlog(){
                 
 } );
 
+
+shortcut.add("a",function (){alert('done');});
