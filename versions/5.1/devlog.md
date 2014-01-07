@@ -16,7 +16,7 @@ ISSUES FOUND
 
 
 
-IMPROVEMENTS
+FUTURE IMPROVEMENTS
 -----------------------------
   - could introduce an 'option' window where the user can change the selling/looting interval period.
   - looting: in the log, when opening it, it would be good if it showed how much chests have been looted in total of the existing log.
