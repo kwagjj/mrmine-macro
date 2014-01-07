@@ -36,3 +36,7 @@ issue#3: the looping is not properly utilizing loopflag and is not yet fully cor
 	
 	
 	- infinite while loop doesn't seem to work. guess I have to use the setInterval eventually.
+	
+	
+====================
+NEED TO REDIRECT URLS TO NEW BRANCH. THIS JOB IS NOT DONE.
