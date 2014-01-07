@@ -1,8 +1,11 @@
-readme for ver.5.1
+DEVLOPTMENT LOG for VER.5.1
+==========================================
 
-#1. added auto looting
+NEW FEATURES
 
-#2. changed selling method
+  #1. added auto looting
+
+  #2. changed selling method
 
 
 ====
