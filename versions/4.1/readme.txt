@@ -14,3 +14,8 @@ issue#2: open PLACE1(sell center) before initiating 'startsell()'
 issue#3: if PLACE1 page is closed, make sure the sell_window displays: "continue sell"
 	- connecting with issue#2, if issue#2 is implemented, it will allow user to be convenient to continue sell.
 	- need to find a way to recognize that the PLACE1 page is closed.... HOW???
+	
+	
+	
+=====
+NEED TO REDIRECT URLS TO NEW BRANCH. THIS JOB IS NOT DONE.
