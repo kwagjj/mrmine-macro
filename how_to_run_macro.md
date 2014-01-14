@@ -48,3 +48,5 @@ HOW TO RUN THE MACRO - TUTORIAL
   <img src="https://raw.github.com/kwagjj/mrmine-macro/take3/how_to_run_img_files/09.png">
   
   #15. Well, this is it. This is how to run the macro of each version. Find the 'snippetcode.js' and run it. How simple! For any errors or notifications that might come handy, refer to the README file in each version.
+  
+  P.S. Please read the <a href src="https://github.com/kwagjj/mrmine-macro/blob/take3/versions/5.1/USER_MANUAL.md">'user manual'</a> for ver.5.1 to know the hotkeys.
